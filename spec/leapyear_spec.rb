@@ -9,5 +9,9 @@ describe LeapYear do
     it "should return  not leapyear for years divisible by 100 but not by 400" do
       expect(subject.year(100)).to eq 'Not Leapyear'
     end
+
+    it "should return leapyear for years divisible by 4 but not by 100" do
+      expect(subject.year(4)).to eq 'Leapyear'
+    end
   end
 end 
